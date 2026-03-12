@@ -1,4 +1,4 @@
-cloud_id        = "b1gvv9rtrnndrv3n6mmt"
+cloud_id        = "b1g4unt8ef7asbkvr5cl"
 folder_id       = "b1gvv9rtrnndrv3n6mmt"
 zone            = "ru-central1-a"
 ssh_user        = "ubuntu"
