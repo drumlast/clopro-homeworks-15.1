@@ -1,0 +1,5 @@
+cloud_id        = "xxxxxxxxxxxxxxxxxxxx"
+folder_id       = "xxxxxxxxxxxxxxxxxxxx"
+zone            = "ru-central1-a"
+ssh_user        = "ubuntu"
+public_key_path = "~/.ssh/id_ed25519.pub"
