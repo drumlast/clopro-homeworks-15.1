@@ -32,6 +32,7 @@
 - `instances.tf`
 - `variables.tf`
 - `outputs.tf`
+- `data.tf`
 
 ---
 
