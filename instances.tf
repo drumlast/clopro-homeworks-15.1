@@ -10,8 +10,8 @@ resource "yandex_compute_instance" "public_vm" {
 
   boot_disk {
     initialize_params {
-      image_family = "ubuntu-2404-lts"
-      size         = 10
+      image_id = data.yandex_compute_image.ubuntu_2404.id
+      size     = 10
     }
   }
 
@@ -22,7 +22,7 @@ resource "yandex_compute_instance" "public_vm" {
   }
 
   metadata = {
-    ssh-keys = "${var.ssh_user}:${file(var.public_key_path)}"
+    ssh-keys = "${var.ssh_user}:${file(pathexpand(var.public_key_path))}"
   }
 }
 
@@ -38,8 +38,8 @@ resource "yandex_compute_instance" "private_vm" {
 
   boot_disk {
     initialize_params {
-      image_family = "ubuntu-2404-lts"
-      size         = 10
+      image_id = data.yandex_compute_image.ubuntu_2404.id
+      size     = 10
     }
   }
 
@@ -50,6 +50,6 @@ resource "yandex_compute_instance" "private_vm" {
   }
 
   metadata = {
-    ssh-keys = "${var.ssh_user}:${file(var.public_key_path)}"
+    ssh-keys = "${var.ssh_user}:${file(pathexpand(var.public_key_path))}"
   }
 }

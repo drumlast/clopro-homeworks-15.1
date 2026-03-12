@@ -22,6 +22,6 @@ resource "yandex_compute_instance" "nat" {
   }
 
   metadata = {
-    ssh-keys = "${var.ssh_user}:${file(var.public_key_path)}"
+    ssh-keys = "${var.ssh_user}:${file(pathexpand(var.public_key_path))}"
   }
 }
