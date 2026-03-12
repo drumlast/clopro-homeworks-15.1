@@ -51,7 +51,11 @@ terraform plan
 
 Скриншот:
 
-![terraform plan](img/1.png)
+![terraform plan](img/1-1.png)
+![terraform plan](img/1-2.png)
+![terraform plan](img/1-3.png)
+![terraform plan](img/1-4.png)
+![terraform plan](img/1-5.png)
 
 ---
 
@@ -63,7 +67,9 @@ terraform apply
 
 Скриншот:
 
-![terraform apply](img/2.png)
+![terraform apply](img/2-1.png)
+![terraform apply](img/2-2.png)
+![terraform apply](img/2-3.png)
 
 ---
 
@@ -120,7 +126,8 @@ ip route
 
 Скриншот:
 
-![private vm internet via nat](img/5.png)
+![private vm internet via nat](img/5-1.png)
+![private vm internet via nat](img/5-2.png)
 
 ---
 
